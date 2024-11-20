@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1 class="text-3xl font-semibold mb-6 text-center">Edit Button Configuration</h1>
+    <h1 class="text-3xl font-semibold mb-6 text-center">Edit Button {{$button->id}} Configuration</h1>
 
     <div class="mb-4">
         <a href="{{ route('dashboard') }}" class="inline-block text-blue-500 hover:text-blue-700">

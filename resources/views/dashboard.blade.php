@@ -18,7 +18,7 @@
             <div class="relative group bg-white p-4 rounded-lg shadow-lg flex flex-col space-y-4">
             <h4 class="text-lg font-bold">{{$button->id}}</h4>
                 <div class="flex flex-col items-center space-y-2">
-                    <a href="{{ $button->hyperlink ? $button->hyperlink : route('edit-button', $button->id) }}"
+                    <a target="__blank" href="{{ $button->hyperlink ? $button->hyperlink : route('edit-button', $button->id) }}"
                         class="block p-6 rounded-lg text-center transition-all duration-300 ease-in-out
                         {{ $button->hyperlink ? 'bg-green-500' : 'bg-yellow-500' }} hover:scale-105 shadow-lg w-full"
                         style="background-color: {{ $button->color }};">
