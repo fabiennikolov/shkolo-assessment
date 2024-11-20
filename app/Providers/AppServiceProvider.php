@@ -17,8 +17,9 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      */
-    public function boot(): void
+    public function boot()
     {
-        //
+        // Сложил съм forcescheme да е https заради ngrok-a иначе правя проверка дали env === production
+        \URL::forceScheme('https');
     }
 }
